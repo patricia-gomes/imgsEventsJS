@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Imgs EventsJS</title>
+	<link rel="stylesheet" href="assets/css/style.css"> 
+</head>
+<body>
+<div class="painel">
+	<div class="images">
+		<ul>
+		   <li><img src="assets/imgs/dogsPB.jpg" id='img1' title='Dogs'  class="img" onmouseover="this.src='assets/imgs/dogs.jpg'" onmouseout="this.src='assets/imgs/dogsPB.jpg'"/></li>
+		   <div class="legenda"></div>
+		   <li><img src="assets/imgs/lionPB.jpg" id='img2' title='Lion'  class="img" onmouseover="this.src='assets/imgs/lion.jpg'" onmouseout="this.src='assets/imgs/lionPB.jpg'" /></li>
+		   <li><img src="assets/imgs/catPB.jpg" id='img3' title='Cat' class="img" onmouseover="this.src='assets/imgs/cat.jpg'" onmouseout="this.src='assets/imgs/catPB.jpg'" /></li>
+		</ul>
+			<img src="assets/imgs/dogs.jpg" class="img_Main" id='imgPrincipal' /><br/>
+		<div class="button">
+	  		<input type="submit" id="cat" value="Cat" onclick="imgCat('imgPrincipal')" 	class="Botao1" />
+	  		<input type="button" value="Lion" id="lion" onclick="imgLion('imgPrincipal')" class="Botao2" />
+	  		<input type="button" value="Dogs" id="dogs" onclick="imgDogs('imgPrincipal')" class="Botao3" />
+	  	</div>
+	</div>
+
+</div>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
